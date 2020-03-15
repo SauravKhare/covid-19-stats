@@ -5,17 +5,26 @@ const StatGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
+  margin: 1rem 2rem 1rem 2rem;
 `;
 const StatBlock = styled.div`
-  background: #f2f2f2;
+  background: #000000;
   font-size: 2rem;
+  color: #ffffff;
   padding: 2rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
   display: grid;
   align-items: center;
   justify-items: center;
   text-align: center;
 `;
+
+const StatH3 = styled.h3`
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+`;
+
 
 export default function Stats({ url }) {
   const { stats, loading, error } = useStats(url);
@@ -25,16 +34,16 @@ export default function Stats({ url }) {
   return (
     <StatGrid>
       <StatBlock>
-        <h3>Confirmed:</h3>
-        <span>{stats.confirmed.value}</span>
+        <StatH3>{stats.confirmed?.value}</StatH3>
+        <span>Total Confirmed</span>
       </StatBlock>
       <StatBlock>
-        <h3>Deaths:</h3>
-        <span>{stats.deaths.value}</span>
+      <StatH3>{stats.deaths?.value}</StatH3>
+      <span>Total Deaths</span>
       </StatBlock>
       <StatBlock>
-        <h3>Recovered:</h3>
-        <span>{stats.recovered.value}</span>
+      <StatH3>{stats.recovered?.value}</StatH3>
+      <span>Total Recovered</span>
       </StatBlock>
     </StatGrid>
   );
