@@ -9,6 +9,7 @@ const StatGrid = styled.div`
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
+    margin: 1rem 2rem 1rem 2rem;
   }
 `;
 const StatBlock = styled.div`
