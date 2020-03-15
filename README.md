@@ -1,5 +1,4 @@
-# rona 🦠
-Code along with React + Next + Hooks API
+# COVID-19 Stats 🦠
 
-<https://www.youtube.com/watch?v=B85s0cjlitE>
+Thank's to Wes Bos, watch --> <https://www.youtube.com/watch?v=B85s0cjlitE>
 
