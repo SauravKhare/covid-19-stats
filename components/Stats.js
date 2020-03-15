@@ -6,6 +6,10 @@ const StatGrid = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   margin: 1rem 2rem 1rem 2rem;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 const StatBlock = styled.div`
   background: #000000;
