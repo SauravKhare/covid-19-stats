@@ -23,6 +23,9 @@ const StatBlock = styled.div`
   align-items: center;
   justify-items: center;
   text-align: center;
+  @media (max-width: 768px) {
+    margin-bottom: 1rem;
+  }
 `;
 
 const StatH3 = styled.h3`
