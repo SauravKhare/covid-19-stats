@@ -29,7 +29,7 @@ const StatBlock = styled.div`
 `;
 
 const StatH3 = styled.h3`
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #ffffff;
   margin-bottom: 0.5rem;
 `;
